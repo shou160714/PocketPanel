@@ -3,50 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PocketPanel — Turn Your Phone Into a Wireless PC Desk Panel</title>
-  <meta name="description" content="PocketPanel turns your Android or iOS smartphone/tablet into a wireless secondary display and touch control deck for your PC. Monitor CPU/GPU, run shortcuts, track AI quotas, and control SwitchBot devices with instant QR pairing.">
+  <title>PocketPanel — Turn Your Phone Into a PC Desk Panel</title>
+  <meta name="description" content="PocketPanel turns your Android or iOS smartphone or tablet into a wireless secondary display and touch control deck for your PC. Monitor CPU/GPU, run shortcuts, track AI quotas, and control SwitchBot devices with QR pairing.">
   <meta name="keywords" content="PocketPanel,PC monitor,system monitor,macro deck,Control Deck,second screen,CPU GPU stats,SwitchBot,Tailscale,Android,iOS,Windows,macOS">
   <meta name="author" content="YuishoICTSolutions">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#0b0f17">
+  <meta name="theme-color" content="#ffffff">
 
-  <!-- Canonical & Multilingual SEO -->
   <link rel="canonical" href="https://shou160714.github.io/PocketPanel/en/">
   <link rel="alternate" hreflang="ja" href="https://shou160714.github.io/PocketPanel/">
   <link rel="alternate" hreflang="en" href="https://shou160714.github.io/PocketPanel/en/">
   <link rel="alternate" hreflang="x-default" href="https://shou160714.github.io/PocketPanel/en/">
 
-  <!-- Icons & Manifest -->
   <link rel="icon" type="image/png" href="../assets/icon.png">
   <link rel="apple-touch-icon" href="../assets/icon.png">
   <link rel="manifest" href="../site.webmanifest">
 
-  <!-- Open Graph / OGP -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PocketPanel">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ja_JP">
-  <meta property="og:title" content="PocketPanel — Turn Your Phone Into a Wireless PC Desk Panel">
+  <meta property="og:title" content="PocketPanel — Turn Your Phone Into a PC Desk Panel">
   <meta property="og:description" content="Real-time CPU/GPU monitoring, touch Control Deck, AI coding quotas, and SwitchBot smart home controls over Wi-Fi or VPN.">
   <meta property="og:url" content="https://shou160714.github.io/PocketPanel/en/">
   <meta property="og:image" content="https://shou160714.github.io/PocketPanel/assets/og-image.png">
   <meta property="og:image:width" content="1920">
   <meta property="og:image:height" content="1080">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PocketPanel — Wireless PC Desk Panel & Touch Deck">
   <meta name="twitter:description" content="Monitor PC stats, control media & shortcuts, track AI quotas, and operate SwitchBot devices right from your phone.">
   <meta name="twitter:image" content="https://shou160714.github.io/PocketPanel/assets/og-image.png">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,38 +51,31 @@
     "url": "https://shou160714.github.io/PocketPanel/en/",
     "image": "https://shou160714.github.io/PocketPanel/assets/og-image.png",
     "softwareVersion": "1.0.1",
-    "author": {
-      "@type": "Organization",
-      "name": "YuishoICTSolutions"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
+    "author": { "@type": "Organization", "name": "YuishoICTSolutions" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "downloadUrl": "https://apps.microsoft.com/detail/9N20M93K38MC"
   }
   </script>
 </head>
-<body data-lang="en">
+<body>
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="PocketPanel Home">
-        <img src="../assets/icon.png" alt="PocketPanel icon" width="36" height="36" class="brand-icon">
-        <span class="brand-name">PocketPanel</span>
+        <img src="../assets/icon.png" alt="PocketPanel icon" width="32" height="32" class="brand-icon">
+        <span>PocketPanel</span>
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#gallery">Screenshots</a>
-        <a href="#how-it-works">How it works</a>
+        <a href="#setup">Setup</a>
         <a href="#download">Download</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <div class="header-actions">
-        <a href="../" class="lang-switch" hreflang="ja" lang="ja" aria-label="日本語に切り替え">日本語</a>
-        <a href="#download" class="btn btn-sm btn-primary">Get App</a>
+        <a href="../" class="lang-switch" hreflang="ja" lang="ja" aria-label="日本語に切り替え">JP</a>
+        <a href="#download" class="btn btn-sm btn-primary">Download</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -99,88 +85,37 @@
     <div class="mobile-nav" id="mobileNav" hidden>
       <a href="#features">Features</a>
       <a href="#gallery">Screenshots</a>
-      <a href="#how-it-works">How it works</a>
+      <a href="#setup">Setup</a>
       <a href="#download">Download</a>
       <a href="#faq">FAQ</a>
-      <a href="../" hreflang="ja" lang="ja">日本語</a>
+      <a href="../" hreflang="ja" lang="ja">JP</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="badge-pill">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            No Account · Local-First · Instant QR Pairing
-          </div>
-          <h1>
-            Turn your phone into<br>
-            <span class="gradient-text">your PC’s desk panel.</span>
-          </h1>
+      <div class="container">
+        <div class="hero-inner">
+          <h1>Turn your phone or tablet<br>into a PC desk panel.</h1>
           <p class="hero-lead">
-            <strong>PocketPanel</strong> transforms any Android or iOS smartphone or tablet into a wireless
-            secondary display and touch control deck for your PC. Track CPU/GPU stats, launch macros,
-            monitor AI coding quotas, and control SwitchBot smart home devices right from your desk.
+            <strong>PocketPanel</strong> is a companion app that turns your Android or iOS device into a
+            wireless secondary display and touch control deck for your PC. Monitor CPU/GPU stats,
+            run shortcuts, track AI coding quotas, and control SwitchBot devices in one place.
           </p>
-
           <div class="hero-cta">
-            <a href="#download" class="btn btn-primary btn-lg">
-              Download App
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-            <a href="#features" class="btn btn-ghost btn-lg">Explore Features</a>
+            <a href="#download" class="btn btn-primary btn-lg">Download App</a>
+            <a href="#gallery" class="btn btn-outline btn-lg">View Screenshots</a>
           </div>
-
-          <div class="hero-platforms">
-            <span>Platforms:</span>
-            <span class="platform-chip">Windows 10 / 11</span>
-            <span class="platform-chip">Android</span>
-            <span class="platform-chip">iOS / iPadOS</span>
-            <span class="platform-chip chip-soon">macOS (Planned)</span>
-          </div>
+          <p class="hero-meta">Supported: Windows 10 / 11 · Android · iOS / iPadOS (macOS planned) · No account required</p>
         </div>
 
-        <div class="hero-visual">
-          <div class="device-showcase">
-            <img
-              src="../assets/screenshots/02_mobile_home.png"
-              alt="PocketPanel Home Dashboard showing clock, weather, Spotify playback, and CPU/GPU/RAM/Network graphs"
-              width="1920"
-              height="1080"
-              class="hero-image"
-            >
-            <div class="floating-card fc-1">
-              <span class="fc-label">CPU / GPU</span>
-              <span class="fc-value">Real-time Telemetry</span>
-            </div>
-            <div class="floating-card fc-2">
-              <span class="fc-label">Widgets</span>
-              <span class="fc-value">133+ Widgets · 30+ Templates</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="highlights">
-      <div class="container highlights-grid">
-        <div class="highlight-item">
-          <strong>133+</strong>
-          <span>Customizable Widgets</span>
-        </div>
-        <div class="highlight-item">
-          <strong>30+</strong>
-          <span>Ready Templates</span>
-        </div>
-        <div class="highlight-item">
-          <strong>12 × 6</strong>
-          <span>Flexible Grid Layout</span>
-        </div>
-        <div class="highlight-item">
-          <strong>1-Scan</strong>
-          <span>QR Code Pairing</span>
+        <div class="hero-media">
+          <img
+            src="../assets/screenshots/02_mobile_home.png"
+            alt="PocketPanel Home Dashboard showing clock, weather, Spotify playback, and CPU/GPU/RAM/Network graphs"
+            width="1920"
+            height="1080"
+          >
         </div>
       </div>
     </section>
@@ -188,69 +123,49 @@
     <section class="section" id="features">
       <div class="container">
         <div class="section-head">
-          <span class="section-eyebrow">FEATURES</span>
-          <h2>Everything at your fingertips</h2>
-          <p>Built for gaming, streaming, software development, and everyday desk productivity.</p>
+          <h2>Features</h2>
+          <p>Build custom pages from 130+ widgets and 30+ templates tailored to your workflow.</p>
         </div>
 
-        <div class="features-grid">
-          <article class="feature-card">
-            <div class="feature-icon icon-cyan" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m6 11 3-3 2 2 4-4 3 3"/></svg>
-            </div>
+        <div class="feature-list">
+          <article class="feature-item">
             <h3>Real-time PC Monitoring</h3>
-            <p>Monitor CPU, GPU load &amp; temps, VRAM, RAM, disks, network throughput, and running processes with crisp live charts.</p>
+            <p>Track CPU and GPU load, temperatures, VRAM, memory, disk usage, network throughput, and ping with live charts and process controls.</p>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon icon-purple" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-            </div>
-            <h3>Control Deck &amp; Media</h3>
-            <p>Trigger apps, URLs, hotkeys, and macros with one tap. Includes rotary volume dial, Mic &amp; Camera hub, OBS control, and Now Playing launcher.</p>
+          <article class="feature-item">
+            <h3>Touch Control Deck &amp; Media</h3>
+            <p>Launch apps, URLs, hotkeys, and macros with one tap. Includes a volume dial, Mic &amp; Camera hub, OBS controls, and a music launcher.</p>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon icon-amber" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
-            </div>
+          <article class="feature-item">
             <h3>AI Coding &amp; DevOps</h3>
-            <p>Track Claude, Codex, and Antigravity quotas and burn-rate forecasts. Respond to local session permission prompts and check GitHub CI status.</p>
+            <p>Check Claude, Codex, and Antigravity quotas and reset timers. Respond to local session permission prompts and view GitHub CI status.</p>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon icon-emerald" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
-            </div>
+          <article class="feature-item">
             <h3>SwitchBot Smart Home</h3>
-            <p>Integrated SwitchBot API and Home Assistant support lets you adjust air conditioning, dim lights, and toggle switches right from your desk.</p>
+            <p>Connect SwitchBot API (and Home Assistant) to adjust air conditioning, dim lights, and toggle switches right from your desk.</p>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon icon-pink" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
-            </div>
-            <h3>Visual Editor &amp; Themes</h3>
-            <p>Drag-and-drop 12×6 grid editor on your PC. Switch between sleek dark dashboards, pastel themes, Simple/PRO modes, and locked orientations.</p>
+          <article class="feature-item">
+            <h3>Visual Layout Editor</h3>
+            <p>Drag and resize widgets on a 12×6 grid in your PC browser. Choose between dark dashboards, pastel themes, Simple/PRO modes, and locked orientations.</p>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon icon-blue" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            </div>
-            <h3>LAN &amp; VPN Auto-Fallback</h3>
-            <p>One QR scan stores your LAN IP and Tailscale VPN addresses. Connects with ultra-low latency at home and seamlessly falls back over VPN away.</p>
+          <article class="feature-item">
+            <h3>QR Pairing &amp; LAN / VPN Fallback</h3>
+            <p>Scan a single QR code to pair. Connects with low latency over local Wi-Fi at home and automatically falls back to Tailscale VPN when away.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="gallery">
+    <section class="section section-subtle" id="gallery">
       <div class="container">
         <div class="section-head">
-          <span class="section-eyebrow">SCREENSHOTS</span>
-          <h2>See PocketPanel in action</h2>
-          <p>From high-density telemetry panels to playful pastel daily views.</p>
+          <h2>Screenshots</h2>
+          <p>Switch between high-density telemetry views and soft pastel daily layouts.</p>
         </div>
 
         <div class="gallery-tabs" role="tablist" aria-label="Screenshot selector">
@@ -263,67 +178,60 @@
           <button class="tab-btn" role="tab" aria-selected="false" data-slide="6">PC Editor</button>
         </div>
 
-        <div class="gallery-stage">
-          <div class="gallery-frame">
-            <img
-              id="galleryMainImage"
-              src="../assets/screenshots/02_mobile_home.png"
-              alt="PocketPanel Home Screen"
-              width="1920"
-              height="1080"
-              loading="lazy"
-            >
-          </div>
-          <div class="gallery-caption">
-            <h3 id="galleryTitle">Home Dashboard</h3>
-            <p id="galleryDesc">Clock, weather, Spotify playback controls, and live CPU/GPU/RAM/Network graphs in a single view.</p>
-          </div>
+        <div class="gallery-frame">
+          <img
+            id="galleryMainImage"
+            src="../assets/screenshots/02_mobile_home.png"
+            alt="PocketPanel Home Screen"
+            width="1920"
+            height="1080"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-caption">
+          <h3 id="galleryTitle">Home Dashboard</h3>
+          <p id="galleryDesc">Clock, weather, Spotify playback controls, and live CPU/GPU/RAM/Network graphs in a single view.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="how-it-works">
+    <section class="section" id="setup">
       <div class="container">
         <div class="section-head">
-          <span class="section-eyebrow">HOW IT WORKS</span>
-          <h2>Up and running in 3 steps</h2>
-          <p>No port forwarding or manual IP configuration required.</p>
+          <h2>Setup</h2>
+          <p>Install on your PC and mobile device, then pair with a QR code.</p>
         </div>
 
         <div class="steps-grid">
           <div class="step-card">
-            <span class="step-num">01</span>
-            <h3>Install the PC Agent</h3>
-            <p>Install PocketPanel on Windows via Microsoft Store and launch it. It runs quietly in your system tray.</p>
+            <span class="step-num">STEP 1</span>
+            <h3>Run the PC Agent</h3>
+            <p>Install PocketPanel on Windows via Microsoft Store and launch it. Settings are accessible anytime from the system tray.</p>
           </div>
           <div class="step-card">
-            <span class="step-num">02</span>
+            <span class="step-num">STEP 2</span>
             <h3>Install the Mobile App</h3>
-            <p>Get PocketPanel on Android (Google Play) or iOS (App Store)—perfect for your daily phone or a spare tablet.</p>
+            <p>Install PocketPanel on Android (Google Play) or iOS (App Store)—great for your phone or a spare tablet.</p>
           </div>
           <div class="step-card">
-            <span class="step-num">03</span>
+            <span class="step-num">STEP 3</span>
             <h3>Scan the QR Code</h3>
-            <p>Scan the pairing QR code shown on your PC, confirm the matching verification code, and your panel goes live.</p>
+            <p>Scan the pairing QR code displayed on your PC and confirm the matching verification code to connect.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="download">
+    <section class="section section-subtle" id="download">
       <div class="container">
         <div class="section-head">
-          <span class="section-eyebrow">DOWNLOAD</span>
-          <h2>Get PocketPanel</h2>
-          <p>PocketPanel pairs a desktop agent on your computer with the mobile app on your phone or tablet.</p>
+          <h2>Download</h2>
+          <p>PocketPanel pairs a desktop agent on your PC with the mobile app on your phone or tablet.</p>
         </div>
 
         <div class="download-groups">
-          <div class="download-group">
-            <h3 class="group-title">
-              <span class="group-step">STEP 1</span>
-              Desktop Agent
-            </h3>
+          <div>
+            <h3 class="group-title">Desktop Agent</h3>
             <div class="store-cards">
               <a
                 href="https://apps.microsoft.com/detail/9N20M93K38MC"
@@ -332,8 +240,8 @@
                 class="store-card"
                 data-store="msStore"
               >
-                <div class="store-icon store-ms" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8.5v8.5H3V3zm9.5 0H21v8.5h-8.5V3zM3 12.5h8.5V21H3v-8.5zm9.5 0H21V21h-8.5v-8.5z"/></svg>
+                <div class="store-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8.5v8.5H3V3zm9.5 0H21v8.5h-8.5V3zM3 12.5h8.5V21H3v-8.5zm9.5 0H21V21h-8.5v-8.5z"/></svg>
                 </div>
                 <div class="store-info">
                   <span class="store-sub">Windows 10 / 11 (x64)</span>
@@ -344,8 +252,8 @@
               </a>
 
               <div class="store-card store-soon" data-store="macOs" aria-disabled="true">
-                <div class="store-icon store-mac" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
+                <div class="store-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
                 </div>
                 <div class="store-info">
                   <span class="store-sub">macOS (Apple Silicon / Intel)</span>
@@ -357,15 +265,12 @@
             </div>
           </div>
 
-          <div class="download-group">
-            <h3 class="group-title">
-              <span class="group-step">STEP 2</span>
-              Mobile App
-            </h3>
+          <div>
+            <h3 class="group-title">Mobile App</h3>
             <div class="store-cards">
               <div class="store-card store-soon" data-store="googlePlay" aria-disabled="true">
-                <div class="store-icon store-play" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.34V3.154c0-.517.224-.998.61-1.34zm11.24 11.243l2.823 2.823-11.07 6.306 8.247-9.129zm3.822-2.176l2.573 1.466c.99.564.99 1.992 0 2.556l-2.573 1.466-3.133-3.133 3.133-2.355zM6.603 1.814l11.07 6.306-2.823 2.823L6.603 1.814z"/></svg>
+                <div class="store-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.34V3.154c0-.517.224-.998.61-1.34zm11.24 11.243l2.823 2.823-11.07 6.306 8.247-9.129zm3.822-2.176l2.573 1.466c.99.564.99 1.992 0 2.556l-2.573 1.466-3.133-3.133 3.133-2.355zM6.603 1.814l11.07 6.306-2.823 2.823L6.603 1.814z"/></svg>
                 </div>
                 <div class="store-info">
                   <span class="store-sub">Android Phone / Tablet</span>
@@ -376,8 +281,8 @@
               </div>
 
               <div class="store-card store-soon" data-store="appStore" aria-disabled="true">
-                <div class="store-icon store-ios" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
+                <div class="store-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
                 </div>
                 <div class="store-info">
                   <span class="store-sub">iPhone / iPad (iOS 15+)</span>
@@ -392,45 +297,41 @@
       </div>
     </section>
 
-    <section class="section" id="security">
-      <div class="container security-box">
-        <div class="security-copy">
-          <span class="section-eyebrow">PRIVACY &amp; SECURITY</span>
-          <h2>Private by design.</h2>
+    <section class="section" id="faq">
+      <div class="container two-col">
+        <div class="security-box">
+          <div class="section-head">
+            <h2>Privacy &amp; Security</h2>
+          </div>
           <p>
-            PocketPanel operates without developer-owned cloud servers. No accounts, no telemetry,
-            and no analytics. Your PC and phone communicate directly over encrypted local or VPN connections.
+            PocketPanel operates without developer-owned cloud servers. No accounts, no telemetry, and no analytics are collected.
           </p>
-          <a href="../privacy.html" class="link-arrow">Read Privacy Policy →</a>
-        </div>
-        <ul class="security-list">
-          <li><strong>No Account Required</strong>: Ready immediately after install</li>
-          <li><strong>Encrypted Pairing</strong>: QR scan + verification code + token auth</li>
-          <li><strong>Direct Connections Only</strong>: Optional integrations connect directly from your device</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="faq">
-      <div class="container faq-container">
-        <div class="section-head">
-          <span class="section-eyebrow">FAQ</span>
-          <h2>Frequently Asked Questions</h2>
+          <ul class="security-list">
+            <li>Paired devices communicate directly over encrypted local or VPN connections</li>
+            <li>Configuration files and logs remain strictly on your own devices</li>
+            <li>Optional third-party widgets connect directly from your device when enabled</li>
+          </ul>
+          <a href="../privacy.html" class="text-link">Read Privacy Policy →</a>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>What do I need to use PocketPanel?</summary>
-            <p>You need the PocketPanel desktop agent on your PC (Windows, with macOS planned) and the PocketPanel mobile app on your Android or iOS device.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Does PocketPanel collect any personal data or require an account?</summary>
-            <p>No. PocketPanel does not require user accounts and never collects or transmits personal information, telemetry, or crash reports.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can I connect over VPN when I'm away from home?</summary>
-            <p>Yes. QR pairing stores both your local Wi-Fi and VPN (e.g., Tailscale) addresses and automatically falls back when you switch networks.</p>
-          </details>
+        <div>
+          <div class="section-head">
+            <h2>FAQ</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>What do I need to use PocketPanel?</summary>
+              <p>You need the PocketPanel desktop agent on your PC (Windows, with macOS planned) and the mobile app on your Android or iOS device.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Does PocketPanel collect any personal data?</summary>
+              <p>No. PocketPanel does not require user accounts and never collects or transmits personal information or telemetry.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I connect over VPN away from home?</summary>
+              <p>Yes. QR pairing stores both your local Wi-Fi and VPN (e.g., Tailscale) addresses and falls back automatically.</p>
+            </details>
+          </div>
         </div>
       </div>
     </section>
@@ -439,7 +340,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="../assets/icon.png" alt="PocketPanel" width="28" height="28">
+        <img src="../assets/icon.png" alt="PocketPanel" width="26" height="26">
         <div>
           <strong>PocketPanel</strong>
           <p class="footer-copy">© 2026 YuishoICTSolutions. Based on PhoneBox (MIT License).</p>
@@ -447,7 +348,7 @@
       </div>
       <div class="footer-links">
         <a href="../privacy.html">Privacy Policy</a>
-        <a href="../">日本語</a>
+        <a href="../" hreflang="ja" lang="ja">JP</a>
         <a href="https://github.com/shou160714/PocketPanel" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
