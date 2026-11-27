@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://shou160714.github.io/DeskPanel/sitemap.xml
+Sitemap: https://shou160714.github.io/PocketPanel/sitemap.xml
