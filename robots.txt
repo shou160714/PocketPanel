@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shou160714.github.io/DeskPanel/sitemap.xml

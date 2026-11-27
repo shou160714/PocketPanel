@@ -1,0 +1,16 @@
+{
+  "name": "PocketPanel",
+  "short_name": "PocketPanel",
+  "description": "Turn your smartphone or tablet into a wireless PC desk panel and touch control deck.",
+  "start_url": "/DeskPanel/",
+  "display": "standalone",
+  "background_color": "#0b0f17",
+  "theme_color": "#0b0f17",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

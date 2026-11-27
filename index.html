@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketPanel｜スマホをPCのサブモニター＆タッチ操作パネルに</title>
+  <meta name="description" content="PocketPanelはスマートフォンやタブレット（Android / iOS）をPCのワイヤレス・サブモニター＆タッチ操作パネルに変えるコンパニオンアプリ。CPU/GPU監視、Control Deck、AI利用枠チェック、SwitchBotスマートホーム連携をQRコード1回で簡単接続。">
+  <meta name="keywords" content="PocketPanel,ポケットパネル,サブモニター,PCモニター,システムモニター,マクロデッキ,Control Deck,リモートコントロール,CPU GPU 監視,SwitchBot,Tailscale,Android,iOS,Windows,macOS">
+  <meta name="author" content="YuishoICTSolutions">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b0f17">
+
+  <!-- Canonical & Multilingual SEO -->
+  <link rel="canonical" href="https://shou160714.github.io/DeskPanel/">
+  <link rel="alternate" hreflang="ja" href="https://shou160714.github.io/DeskPanel/">
+  <link rel="alternate" hreflang="en" href="https://shou160714.github.io/DeskPanel/en/">
+  <link rel="alternate" hreflang="x-default" href="https://shou160714.github.io/DeskPanel/en/">
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph / OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PocketPanel">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="PocketPanel｜スマホをPCのサブモニター＆タッチ操作パネルに">
+  <meta property="og:description" content="CPU/GPUのリアルタイム監視、ワンタップ操作のControl Deck、AI利用枠・SwitchBot操作まで。スマホ1台を最強のデスクパネルに。">
+  <meta property="og:url" content="https://shou160714.github.io/DeskPanel/">
+  <meta property="og:image" content="https://shou160714.github.io/DeskPanel/assets/og-image.png">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="PocketPanel デスクパネルの画面イメージ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PocketPanel｜スマホをPCのサブモニター＆タッチ操作パネルに">
+  <meta name="twitter:description" content="CPU/GPU監視、Control Deck、AIセッション管理、SwitchBot連携をQRコード接続で。Windows・Android・iOS対応。">
+  <meta name="twitter:image" content="https://shou160714.github.io/DeskPanel/assets/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PocketPanel",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11, Android, iOS, macOS",
+    "description": "スマートフォンやタブレットをPCのワイヤレス・サブモニターおよびタッチ操作パネルに変えるコンパニオンアプリ。CPU/GPU監視、ショートカット実行、メディア操作、AI利用枠確認、SwitchBotスマートホーム連携に対応。",
+    "url": "https://shou160714.github.io/DeskPanel/",
+    "image": "https://shou160714.github.io/DeskPanel/assets/og-image.png",
+    "screenshot": [
+      "https://shou160714.github.io/DeskPanel/assets/screenshots/02_mobile_home.png",
+      "https://shou160714.github.io/DeskPanel/assets/screenshots/03_mobile_system.png",
+      "https://shou160714.github.io/DeskPanel/assets/screenshots/04_mobile_deck.png",
+      "https://shou160714.github.io/DeskPanel/assets/screenshots/05_mobile_ai.png",
+      "https://shou160714.github.io/DeskPanel/assets/screenshots/01_pc_editor.png"
+    ],
+    "softwareVersion": "1.0.1",
+    "author": {
+      "@type": "Organization",
+      "name": "YuishoICTSolutions"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "YuishoICTSolutions"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "downloadUrl": "https://apps.microsoft.com/detail/9N20M93K38MC"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "PocketPanelを使うには何が必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PC用のデスクトップエージェント（Windows版・macOS版予定）と、スマートフォン・タブレット用のモバイルアプリ（Android / iOS）が必要です。両方をインストールし、QRコードを読み取るだけで接続できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "アカウント登録やクラウドへのデータ送信はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ありません。PocketPanelはアカウント不要で、開発者のサーバーも保有していません。PCとスマホ間はUSBまたは認証・暗号化されたローカルネットワーク（Wi-Fi / Tailscale等のVPN）で直接通信します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "外出先や別のネットワークからでも接続できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。自宅のWi-Fi（LAN）とVPN（Tailscaleなど）の自動フォールバックに対応しているため、自宅では低遅延のLAN接続、外出先ではVPN経由へ自動で切り替わります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SwitchBotなどのスマートホーム操作にも対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。SwitchBot API連携およびHome Assistantに対応しており、エアコンの温度調整や照明の調光、スイッチのON/OFFをPocketPanelのウィジェットから直接操作できます。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="PocketPanel ホーム">
+        <img src="assets/icon.png" alt="PocketPanel アイコン" width="36" height="36" class="brand-icon">
+        <span class="brand-name">PocketPanel</span>
+      </a>
+
+      <nav class="nav-links" aria-label="メインナビゲーション">
+        <a href="#features">できること</a>
+        <a href="#gallery">画面紹介</a>
+        <a href="#how-it-works">使い方</a>
+        <a href="#download">ダウンロード</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="en/" class="lang-switch" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+        <a href="#download" class="btn btn-sm btn-primary">入手する</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#features">できること</a>
+      <a href="#gallery">画面紹介</a>
+      <a href="#how-it-works">使い方</a>
+      <a href="#download">ダウンロード</a>
+      <a href="#faq">FAQ</a>
+      <a href="en/" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            アカウント不要・ローカル完結・QRコードで即接続
+          </div>
+          <h1>
+            手元のスマホを、<br>
+            <span class="gradient-text">PCの最強デスクパネル</span>に。
+          </h1>
+          <p class="hero-lead">
+            <strong>PocketPanel</strong> は、使っていないスマホやタブレット（Android / iOS）を
+            Windows PC のワイヤレス・サブモニター＆タッチ操作デッキに変えるコンパニオンアプリです。
+            CPU/GPU監視からショートカット実行、AI利用枠の確認、SwitchBot操作まで、デスクのすべてを手元で完結。
+          </p>
+
+          <div class="hero-cta">
+            <a href="#download" class="btn btn-primary btn-lg">
+              アプリを入手する
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#features" class="btn btn-ghost btn-lg">できることを見る</a>
+          </div>
+
+          <div class="hero-platforms" aria-label="対応プラットフォーム">
+            <span>対応環境:</span>
+            <span class="platform-chip">Windows 10 / 11</span>
+            <span class="platform-chip">Android</span>
+            <span class="platform-chip">iOS / iPadOS</span>
+            <span class="platform-chip chip-soon">macOS（予定）</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="device-showcase">
+            <img
+              src="assets/screenshots/02_mobile_home.png"
+              alt="PocketPanel ホーム画面：時計、天気、Spotify再生操作、CPU/GPU/RAM/ネットワークのリアルタイムグラフを表示"
+              width="1920"
+              height="1080"
+              class="hero-image"
+            >
+            <div class="floating-card fc-1">
+              <span class="fc-label">CPU / GPU</span>
+              <span class="fc-value">リアルタイム監視</span>
+            </div>
+            <div class="floating-card fc-2">
+              <span class="fc-label">ウィジェット</span>
+              <span class="fc-value">133+ 種 / 30+ テンプレート</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Strip -->
+    <section class="highlights" aria-label="主な数値と特徴">
+      <div class="container highlights-grid">
+        <div class="highlight-item">
+          <strong>133+</strong>
+          <span>豊富なウィジェット</span>
+        </div>
+        <div class="highlight-item">
+          <strong>30+</strong>
+          <span>即戦力テンプレート</span>
+        </div>
+        <div class="highlight-item">
+          <strong>12 × 6</strong>
+          <span>自由配置グリッド</span>
+        </div>
+        <div class="highlight-item">
+          <strong>0 秒設定</strong>
+          <span>QRスキャンで接続</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">FEATURES</span>
+          <h2>PocketPanel でできること</h2>
+          <p>ゲーム、配信、プログラミング、日常のデスクワークまで。用途に合わせてページを切り替えられます。</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon icon-cyan" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m6 11 3-3 2 2 4-4 3 3"/></svg>
+            </div>
+            <h3>リアルタイムPC監視</h3>
+            <p>CPU・GPU使用率や温度、VRAM、メモリ、ディスク容量、ネットワーク速度・Pingをグラフで常時表示。実行中プロセスの確認・制御にも対応。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-purple" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3>Control Deck &amp; メディア操作</h3>
+            <p>アプリ起動、URL、ショートカットキー、マクロをワンタップ実行。音量ダイヤル、マイク＆カメラハブ、OBS操作、Spotify等の音楽ランチャーも搭載。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-amber" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+            </div>
+            <h3>AIコーディング＆開発支援</h3>
+            <p>Claude・Codex・Antigravity の利用枠やリセット時刻、消費ペースを可視化。ローカルセッションの監視やスマホからの許可応答、GitHub CI確認にも対応。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-emerald" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+            </div>
+            <h3>SwitchBot スマートホーム連携</h3>
+            <p>SwitchBot API 連携（Home Assistant も対応）で、デスクに座ったままエアコンの温度・風量調整、照明の調光、スイッチのON/OFFを手元で操作できます。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-pink" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3>ビジュアルエディター＆テーマ</h3>
+            <p>PCブラウザ上でドラッグ＆ドロップ配置。クールなダークUIからかわいいパステルテーマ、Simple / PROモード切替、縦横画面ロックまで自由自在です。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-blue" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <h3>Wi-Fi / VPN 自動フォールバック</h3>
+            <p>QRコードを1回読み取るだけでLAN・VPN（Tailscale等）アドレスを一括保存。自宅では高速LAN、外出先ではVPNへ自動で切り替わります。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">SCREENSHOTS</span>
+          <h2>実際の画面イメージ</h2>
+          <p>プロ向けの情報密度が高いレイアウトから、癒やされるパステルテーマまで多彩に切り替えられます。</p>
+        </div>
+
+        <div class="gallery-tabs" role="tablist" aria-label="スクリーンショット切り替え">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-slide="0">ホーム</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="1">システム監視</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="2">Control Deck</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="3">AI 利用枠</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="4">パステル・デイリー</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="5">パステル・音楽</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-slide="6">PCエディター</button>
+        </div>
+
+        <div class="gallery-stage">
+          <div class="gallery-frame">
+            <img
+              id="galleryMainImage"
+              src="assets/screenshots/02_mobile_home.png"
+              alt="PocketPanel ホーム画面"
+              width="1920"
+              height="1080"
+              loading="lazy"
+            >
+          </div>
+          <div class="gallery-caption">
+            <h3 id="galleryTitle">ホームダッシュボード</h3>
+            <p id="galleryDesc">時計、天気、Spotify再生コントロール、CPU/GPU/RAM/ネットワークのグラフを1画面に集約。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">HOW IT WORKS</span>
+          <h2>かんたん 3 ステップで始められる</h2>
+          <p>難しいポート開放やIPアドレスの手入力は不要です。</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3>PCにエージェントを入れる</h3>
+            <p>Windows（Microsoft Store）に PocketPanel エージェントをインストールして起動します。常駐トレイアイコンからいつでも設定画面を開けます。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3>スマホにアプリを入れる</h3>
+            <p>Android（Google Play）または iOS（App Store）にモバイル版 PocketPanel をインストールします。古いスマホやタブレットの再利用にも最適です。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3>QRコードをスキャン</h3>
+            <p>PC画面に表示されたペアリング用QRコードをスマホで読み取り、確認コードを承認すれば接続完了。すぐにパネルが表示されます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download / Store Links Section -->
+    <section class="section section-alt" id="download">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">DOWNLOAD</span>
+          <h2>アプリをダウンロード</h2>
+          <p>PC用デスクトップエージェントと、スマホ・タブレット用アプリの2つを組み合わせて使用します。</p>
+        </div>
+
+        <div class="download-groups">
+          <!-- PC Agent Group -->
+          <div class="download-group">
+            <h3 class="group-title">
+              <span class="group-step">STEP 1</span>
+              PC用デスクトップエージェント
+            </h3>
+            <div class="store-cards">
+              <a
+                href="https://apps.microsoft.com/detail/9N20M93K38MC"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store-card"
+                data-store="msStore"
+              >
+                <div class="store-icon store-ms" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8.5v8.5H3V3zm9.5 0H21v8.5h-8.5V3zM3 12.5h8.5V21H3v-8.5zm9.5 0H21V21h-8.5v-8.5z"/></svg>
+                </div>
+                <div class="store-info">
+                  <span class="store-sub">Windows 10 / 11 (x64)</span>
+                  <strong class="store-name">Microsoft Store</strong>
+                  <span class="store-status status-review">ストア認定中（ID: 9N20M93K38MC）</span>
+                </div>
+                <span class="store-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <div class="store-card store-soon" data-store="macOs" aria-disabled="true">
+                <div class="store-icon store-mac" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
+                </div>
+                <div class="store-info">
+                  <span class="store-sub">macOS (Apple Silicon / Intel)</span>
+                  <strong class="store-name">macOS 向けエージェント</strong>
+                  <span class="store-status status-soon">今後公開予定 (Coming Soon)</span>
+                </div>
+                <span class="store-badge">予定</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile App Group -->
+          <div class="download-group">
+            <h3 class="group-title">
+              <span class="group-step">STEP 2</span>
+              スマホ・タブレット用アプリ
+            </h3>
+            <div class="store-cards">
+              <div class="store-card store-soon" data-store="googlePlay" aria-disabled="true">
+                <div class="store-icon store-play" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.34V3.154c0-.517.224-.998.61-1.34zm11.24 11.243l2.823 2.823-11.07 6.306 8.247-9.129zm3.822-2.176l2.573 1.466c.99.564.99 1.992 0 2.556l-2.573 1.466-3.133-3.133 3.133-2.355zM6.603 1.814l11.07 6.306-2.823 2.823L6.603 1.814z"/></svg>
+                </div>
+                <div class="store-info">
+                  <span class="store-sub">Android スマートフォン / タブレット</span>
+                  <strong class="store-name">Google Play</strong>
+                  <span class="store-status status-soon">公開準備中 (Coming Soon)</span>
+                </div>
+                <span class="store-badge">準備中</span>
+              </div>
+
+              <div class="store-card store-soon" data-store="appStore" aria-disabled="true">
+                <div class="store-icon store-ios" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.66-.8 1.11-1.91.99-3.02-.95.04-2.11.63-2.79 1.43-.61.7-.11 1.84-.98 2.93 1.07.08 2.12-.54 2.78-1.34z"/></svg>
+                </div>
+                <div class="store-info">
+                  <span class="store-sub">iPhone / iPad (iOS 15+)</span>
+                  <strong class="store-name">App Store</strong>
+                  <span class="store-status status-soon">公開準備中 (Coming Soon)</span>
+                </div>
+                <span class="store-badge">準備中</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy & Security -->
+    <section class="section" id="security">
+      <div class="container security-box">
+        <div class="security-copy">
+          <span class="section-eyebrow">PRIVACY &amp; SECURITY</span>
+          <h2>ローカル完結で、ずっと安心。</h2>
+          <p>
+            PocketPanel は開発者のクラウドサーバーを経由しません。アカウント登録も、テレメトリや利用状況データの収集も一切行いません。
+            ペアリングされた端末同士が、認証・暗号化された通信で直接やり取りします。
+          </p>
+          <a href="privacy.html" class="link-arrow">プライバシーポリシーを読む →</a>
+        </div>
+        <ul class="security-list">
+          <li><strong>アカウント登録不要</strong>：インストールしてすぐ使える</li>
+          <li><strong>暗号化ペアリング</strong>：QRスキャン＋確認コード＋トークン認証</li>
+          <li><strong>外部送信なし</strong>：天気やSwitchBotなど有効化した連携先のみ直接通信</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-container">
+        <div class="section-head">
+          <span class="section-eyebrow">FAQ</span>
+          <h2>よくある質問</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>PocketPanel を使うには何が必要ですか？</summary>
+            <p>PC用のデスクトップエージェント（Windows版 / 今後のmacOS版）と、スマートフォン・タブレット用のモバイルアプリ（Android / iOS）の両方が必要です。同じWi-FiまたはVPN上でQRコードを読み取るだけで接続できます。</p>
+          </details>
+          <details class="faq-item">
+            <summary>アカウント登録や月額課金、クラウドへのデータ送信はありますか？</summary>
+            <p>いいえ、アカウント登録やクラウドサーバーへのデータ送信はありません。すべての設定やPCステータス情報はローカル環境とペアリング済み端末の間でのみ通信されます。</p>
+          </details>
+          <details class="faq-item">
+            <summary>外出先や別のWi-FiからでもPCを監視・操作できますか？</summary>
+            <p>はい。TailscaleなどのVPNアドレスもQRコードペアリング時に一括保存されるため、自宅Wi-Fiでは低遅延のLAN接続、外出先ではVPN経由へ自動で切り替わります。</p>
+          </details>
+          <details class="faq-item">
+            <summary>SwitchBotの操作にはハブが必要ですか？</summary>
+            <p>SwitchBot API（v1.1）経由でデバイスと通信するため、SwitchBotアプリ上でAPIトークン・シークレットを発行し、対応するSwitchBotハブ製品等と連携しているデバイスを操作できます。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="PocketPanel" width="28" height="28">
+        <div>
+          <strong>PocketPanel</strong>
+          <p class="footer-copy">© 2026 YuishoICTSolutions. Based on PhoneBox (MIT License).</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="en/">English</a>
+        <a href="https://github.com/shou160714/DeskPanel" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
